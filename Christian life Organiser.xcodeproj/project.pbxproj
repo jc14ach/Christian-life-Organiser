@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF926CC51E52384600782103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC41E52384600782103 /* AppDelegate.swift */; };
+		EF926CC71E52384600782103 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC61E52384600782103 /* FirstViewController.swift */; };
+		EF926CC91E52384600782103 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC81E52384600782103 /* SecondViewController.swift */; };
+		EF926CCC1E52384600782103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF926CCA1E52384600782103 /* Main.storyboard */; };
+		EF926CCE1E52384600782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF926CCD1E52384600782103 /* Assets.xcassets */; };
+		EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF926CCF1E52384600782103 /* LaunchScreen.storyboard */; };
+		EF926CDC1E52384600782103 /* Christian_life_OrganiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CDB1E52384600782103 /* Christian_life_OrganiserTests.swift */; };
+		EF926CE71E52384A00782103 /* Christian_life_OrganiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CE61E52384A00782103 /* Christian_life_OrganiserUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF926CD81E52384600782103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF926CB91E52384500782103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF926CC01E52384600782103;
+			remoteInfo = "Christian life Organiser";
+		};
+		EF926CE31E52384600782103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF926CB91E52384500782103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF926CC01E52384600782103;
+			remoteInfo = "Christian life Organiser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF926CC11E52384600782103 /* Christian life Organiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian life Organiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF926CC41E52384600782103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF926CC61E52384600782103 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EF926CC81E52384600782103 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EF926CCB1E52384600782103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF926CCD1E52384600782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF926CD01E52384600782103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF926CD21E52384600782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF926CD71E52384600782103 /* Christian life OrganiserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christian life OrganiserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF926CDB1E52384600782103 /* Christian_life_OrganiserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christian_life_OrganiserTests.swift; sourceTree = "<group>"; };
+		EF926CDD1E52384600782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF926CE21E52384600782103 /* Christian life OrganiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christian life OrganiserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF926CE61E52384A00782103 /* Christian_life_OrganiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christian_life_OrganiserUITests.swift; sourceTree = "<group>"; };
+		EF926CE81E52384A00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF926CBE1E52384600782103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CD41E52384600782103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CDF1E52384600782103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF926CB81E52384500782103 = {
+			isa = PBXGroup;
+			children = (
+				EF926CC31E52384600782103 /* Christian life Organiser */,
+				EF926CDA1E52384600782103 /* Christian life OrganiserTests */,
+				EF926CE51E52384600782103 /* Christian life OrganiserUITests */,
+				EF926CC21E52384600782103 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF926CC21E52384600782103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF926CC11E52384600782103 /* Christian life Organiser.app */,
+				EF926CD71E52384600782103 /* Christian life OrganiserTests.xctest */,
+				EF926CE21E52384600782103 /* Christian life OrganiserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF926CC31E52384600782103 /* Christian life Organiser */ = {
+			isa = PBXGroup;
+			children = (
+				EF926CC41E52384600782103 /* AppDelegate.swift */,
+				EF926CC61E52384600782103 /* FirstViewController.swift */,
+				EF926CC81E52384600782103 /* SecondViewController.swift */,
+				EF926CCA1E52384600782103 /* Main.storyboard */,
+				EF926CCD1E52384600782103 /* Assets.xcassets */,
+				EF926CCF1E52384600782103 /* LaunchScreen.storyboard */,
+				EF926CD21E52384600782103 /* Info.plist */,
+			);
+			path = "Christian life Organiser";
+			sourceTree = "<group>";
+		};
+		EF926CDA1E52384600782103 /* Christian life OrganiserTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF926CDB1E52384600782103 /* Christian_life_OrganiserTests.swift */,
+				EF926CDD1E52384600782103 /* Info.plist */,
+			);
+			path = "Christian life OrganiserTests";
+			sourceTree = "<group>";
+		};
+		EF926CE51E52384600782103 /* Christian life OrganiserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF926CE61E52384A00782103 /* Christian_life_OrganiserUITests.swift */,
+				EF926CE81E52384A00782103 /* Info.plist */,
+			);
+			path = "Christian life OrganiserUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF926CC01E52384600782103 /* Christian life Organiser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF926CEB1E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life Organiser" */;
+			buildPhases = (
+				EF926CBD1E52384600782103 /* Sources */,
+				EF926CBE1E52384600782103 /* Frameworks */,
+				EF926CBF1E52384600782103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Christian life Organiser";
+			productName = "Christian life Organiser";
+			productReference = EF926CC11E52384600782103 /* Christian life Organiser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF926CD61E52384600782103 /* Christian life OrganiserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF926CEE1E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserTests" */;
+			buildPhases = (
+				EF926CD31E52384600782103 /* Sources */,
+				EF926CD41E52384600782103 /* Frameworks */,
+				EF926CD51E52384600782103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF926CD91E52384600782103 /* PBXTargetDependency */,
+			);
+			name = "Christian life OrganiserTests";
+			productName = "Christian life OrganiserTests";
+			productReference = EF926CD71E52384600782103 /* Christian life OrganiserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF926CE11E52384600782103 /* Christian life OrganiserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF926CF11E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserUITests" */;
+			buildPhases = (
+				EF926CDE1E52384600782103 /* Sources */,
+				EF926CDF1E52384600782103 /* Frameworks */,
+				EF926CE01E52384600782103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF926CE41E52384600782103 /* PBXTargetDependency */,
+			);
+			name = "Christian life OrganiserUITests";
+			productName = "Christian life OrganiserUITests";
+			productReference = EF926CE21E52384600782103 /* Christian life OrganiserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF926CB91E52384500782103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jc14ach;
+				TargetAttributes = {
+					EF926CC01E52384600782103 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EF926CD61E52384600782103 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EF926CC01E52384600782103;
+					};
+					EF926CE11E52384600782103 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EF926CC01E52384600782103;
+					};
+				};
+			};
+			buildConfigurationList = EF926CBC1E52384500782103 /* Build configuration list for PBXProject "Christian life Organiser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF926CB81E52384500782103;
+			productRefGroup = EF926CC21E52384600782103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF926CC01E52384600782103 /* Christian life Organiser */,
+				EF926CD61E52384600782103 /* Christian life OrganiserTests */,
+				EF926CE11E52384600782103 /* Christian life OrganiserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF926CBF1E52384600782103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */,
+				EF926CCE1E52384600782103 /* Assets.xcassets in Resources */,
+				EF926CCC1E52384600782103 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CD51E52384600782103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CE01E52384600782103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF926CBD1E52384600782103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF926CC91E52384600782103 /* SecondViewController.swift in Sources */,
+				EF926CC51E52384600782103 /* AppDelegate.swift in Sources */,
+				EF926CC71E52384600782103 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CD31E52384600782103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF926CDC1E52384600782103 /* Christian_life_OrganiserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF926CDE1E52384600782103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF926CE71E52384A00782103 /* Christian_life_OrganiserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF926CD91E52384600782103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF926CC01E52384600782103 /* Christian life Organiser */;
+			targetProxy = EF926CD81E52384600782103 /* PBXContainerItemProxy */;
+		};
+		EF926CE41E52384600782103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF926CC01E52384600782103 /* Christian life Organiser */;
+			targetProxy = EF926CE31E52384600782103 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF926CCA1E52384600782103 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF926CCB1E52384600782103 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF926CCF1E52384600782103 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF926CD01E52384600782103 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF926CE91E52384A00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF926CEA1E52384A00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF926CEC1E52384A00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Christian life Organiser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-Organiser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF926CED1E52384A00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Christian life Organiser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-Organiser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF926CEF1E52384A00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Christian life OrganiserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christian life Organiser.app/Christian life Organiser";
+			};
+			name = Debug;
+		};
+		EF926CF01E52384A00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Christian life OrganiserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christian life Organiser.app/Christian life Organiser";
+			};
+			name = Release;
+		};
+		EF926CF21E52384A00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Christian life OrganiserUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Christian life Organiser";
+			};
+			name = Debug;
+		};
+		EF926CF31E52384A00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Christian life OrganiserUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Christian life Organiser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF926CBC1E52384500782103 /* Build configuration list for PBXProject "Christian life Organiser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF926CE91E52384A00782103 /* Debug */,
+				EF926CEA1E52384A00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF926CEB1E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life Organiser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF926CEC1E52384A00782103 /* Debug */,
+				EF926CED1E52384A00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF926CEE1E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF926CEF1E52384A00782103 /* Debug */,
+				EF926CF01E52384A00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF926CF11E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF926CF21E52384A00782103 /* Debug */,
+				EF926CF31E52384A00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF926CB91E52384500782103 /* Project object */;
+}
