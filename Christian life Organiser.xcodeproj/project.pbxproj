@@ -15,6 +15,7 @@
 		EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF926CCF1E52384600782103 /* LaunchScreen.storyboard */; };
 		EF926CDC1E52384600782103 /* Christian_life_OrganiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CDB1E52384600782103 /* Christian_life_OrganiserTests.swift */; };
 		EF926CE71E52384A00782103 /* Christian_life_OrganiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CE61E52384A00782103 /* Christian_life_OrganiserUITests.swift */; };
+		EF926CF71E52397700782103 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CF61E52397700782103 /* ThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EF926CE21E52384600782103 /* Christian life OrganiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christian life OrganiserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF926CE61E52384A00782103 /* Christian_life_OrganiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christian_life_OrganiserUITests.swift; sourceTree = "<group>"; };
 		EF926CE81E52384A00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF926CF61E52397700782103 /* ThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				EF926CC41E52384600782103 /* AppDelegate.swift */,
 				EF926CC61E52384600782103 /* FirstViewController.swift */,
 				EF926CC81E52384600782103 /* SecondViewController.swift */,
+				EF926CF61E52397700782103 /* ThirdView.swift */,
 				EF926CCA1E52384600782103 /* Main.storyboard */,
 				EF926CCD1E52384600782103 /* Assets.xcassets */,
 				EF926CCF1E52384600782103 /* LaunchScreen.storyboard */,
@@ -196,13 +199,16 @@
 				TargetAttributes = {
 					EF926CC01E52384600782103 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					EF926CD61E52384600782103 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = EF926CC01E52384600782103;
 					};
 					EF926CE11E52384600782103 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = EF926CC01E52384600782103;
 					};
 				};
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF926CC91E52384600782103 /* SecondViewController.swift in Sources */,
+				EF926CF71E52397700782103 /* ThirdView.swift in Sources */,
 				EF926CC51E52384600782103 /* AppDelegate.swift in Sources */,
 				EF926CC71E52384600782103 /* FirstViewController.swift in Sources */,
 			);
@@ -409,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-Organiser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-Organiser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christian life Organiser.app/Christian life Organiser";
 			};
 			name = Debug;
@@ -443,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christian life Organiser.app/Christian life Organiser";
 			};
 			name = Release;
@@ -454,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Christian life Organiser";
 			};
 			name = Debug;
@@ -465,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "James.Christian-life-OrganiserUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Christian life Organiser";
 			};
 			name = Release;
@@ -488,6 +501,7 @@
 				EF926CED1E52384A00782103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF926CEE1E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +510,7 @@
 				EF926CF01E52384A00782103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF926CF11E52384A00782103 /* Build configuration list for PBXNativeTarget "Christian life OrganiserUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				EF926CF31E52384A00782103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
