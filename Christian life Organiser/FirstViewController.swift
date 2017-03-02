@@ -11,13 +11,28 @@ import UIKit
 import MapKit
 //import CoreLocation
 
-class FirstViewController: UIViewController, UISearchBarDelegate {
+class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
    
+    let Hatfield: [String] = ["Home Church"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return(Hatfield.count)
+    }
     
     
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default , reuseIdentifier: "cell")
+        cell.textLabel?.text = Hatfield[indexPath.row]
+        return(cell)
+    }
+    // church results
+    //let Hatfield: [String] = ["Home Church"]
     
+    // varibles for mapkit
     var searchController:UISearchController!
     var annotation:MKAnnotation!
     var localSearchRequest:MKLocalSearchRequest!
@@ -27,6 +42,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     var pointAnnotation:MKPointAnnotation!
     var pinAnnotationView:MKPinAnnotationView!
     
+    @IBOutlet weak var TableView: UITableView!
     @IBAction func showSearchBar(_ sender: Any) {
         
         
@@ -54,6 +70,12 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 34.03, longitude: 118.14)
+        let span = MKCoordinateSpanMake(5, 5)
+        let region = MKCoordinateRegionMake(coordinate, span)
+        self.mapView.setRegion(region, animated: true)
+        self.TableView.isHidden = true
+        
        
     }
 
@@ -61,7 +83,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    // function for map search
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         //1
         searchBar.resignFirstResponder()
@@ -91,9 +113,23 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
             self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
             self.mapView.centerCoordinate = self.pointAnnotation.coordinate
             self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+            
+            
+            // text view options
+            if searchBar.text ==  "Hatfield" {
+                
+                self.TableView.isHidden = false
+                
+                }
+            
+            
+                        
+                
+            }
         }
     }
+    
    
+    
 
-}
 

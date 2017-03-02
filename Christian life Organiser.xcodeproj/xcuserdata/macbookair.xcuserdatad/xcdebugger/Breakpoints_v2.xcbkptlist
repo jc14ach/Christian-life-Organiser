@@ -2,4 +2,147 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christian life Organiser/FirstViewController.swift"
+            timestampString = "510108767.633047"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "searchBarSearchButtonClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.searchBarSearchButtonClicked (__ObjC.UISearchBar) -&gt; ()"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510089733.413254"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "2351">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.(searchBarSearchButtonClicked (__ObjC.UISearchBar) -&gt; ()).(closure #1)"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510089733.416662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "3864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christian life Organiser/FirstViewController.swift"
+            timestampString = "510106047.650479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FirstViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.__deallocating_deinit"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510107638.362068"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Christian_life_Organiser.FirstViewController"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510107638.364878"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Christian_life_Organiser.FirstViewController"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510107638.36669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Christian_life_Organiser.FirstViewController&gt;"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510107638.368296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Christian_life_Organiser.FirstViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Christian_life_Organiser.FirstViewController&gt;"
+                  moduleName = "Christian life Organiser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/james&apos;s%20memory%20stick/Christian%20life%20Organiser/Christian%20life%20Organiser/FirstViewController.swift"
+                  timestampString = "510107638.369898"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
