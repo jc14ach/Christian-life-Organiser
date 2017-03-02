@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/FirstViewController.swift"
-            timestampString = "510108767.633047"
+            timestampString = "510175654.766013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "searchBarSearchButtonClicked(_:)"
             landmarkType = "7">
             <Locations>

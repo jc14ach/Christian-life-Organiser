@@ -14,7 +14,7 @@ import MapKit
 class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
    
-    let Hatfield: [String] = ["Home Church"]
+    let Hatfield: [String] = ["Home Church", "Forest Town Church", "Christ Church"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -117,9 +117,26 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
             
             // text view options
             if searchBar.text ==  "Hatfield" {
-                
+                // sets view table and map for hatfield results
                 self.TableView.isHidden = false
                 
+                let homeCoordinates = CLLocationCoordinate2DMake(51.753312, -0.24082080)
+                let homeAnnotation = MKPointAnnotation()
+                homeAnnotation.title = "home church"
+                homeAnnotation.coordinate = homeCoordinates
+                self.mapView.addAnnotation(homeAnnotation)
+                
+                let forestCordinates = CLLocationCoordinate2DMake(51.752394,-0.273086)
+                let forestAnnotation = MKPointAnnotation()
+                forestAnnotation.title = "Forest Town Church"
+                forestAnnotation.coordinate = forestCordinates
+                self.mapView.addAnnotation(forestAnnotation)
+                
+                let christCoordinates = CLLocationCoordinate2DMake(51.766618,-0.217570)
+                let christAnnotation = MKPointAnnotation()
+                christAnnotation.title = "Christ Church"
+                christAnnotation.coordinate = christCoordinates
+                self.mapView.addAnnotation(christAnnotation)
                 }
             
             
