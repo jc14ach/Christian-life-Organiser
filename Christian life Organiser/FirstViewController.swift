@@ -12,9 +12,13 @@ import MapKit
 //import CoreLocation
 
 class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
-
-   
+    
+    
+    
+    
     let Hatfield: [String] = ["Home Church", "Forest Town Church", "Christ Church"]
+    let identities : [String] = ["A","B","C"]
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -29,6 +33,14 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
         cell.textLabel?.text = Hatfield[indexPath.row]
         return(cell)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vcName = identities[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier:  vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
     // church results
     //let Hatfield: [String] = ["Home Church"]
     
@@ -75,7 +87,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated: true)
         self.TableView.isHidden = true
-        
+       
        
     }
 

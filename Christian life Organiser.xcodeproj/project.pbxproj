@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */; };
 		EF926CC51E52384600782103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC41E52384600782103 /* AppDelegate.swift */; };
 		EF926CC71E52384600782103 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC61E52384600782103 /* FirstViewController.swift */; };
 		EF926CC91E52384600782103 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC81E52384600782103 /* SecondViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Welcome-Home-Autumn-qcm.jpg"; path = "../../Welcome-Home-Autumn-qcm.jpg"; sourceTree = "<group>"; };
 		EF926CC11E52384600782103 /* Christian life Organiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian life Organiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF926CC41E52384600782103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF926CC61E52384600782103 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				EF926CC81E52384600782103 /* SecondViewController.swift */,
 				EF926CF61E52397700782103 /* ThirdView.swift */,
 				EF926CCA1E52384600782103 /* Main.storyboard */,
+				D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */,
 				EF926CCD1E52384600782103 /* Assets.xcassets */,
 				EF926CCF1E52384600782103 /* LaunchScreen.storyboard */,
 				EF926CD21E52384600782103 /* Info.plist */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */,
+				D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */,
 				EF926CCE1E52384600782103 /* Assets.xcassets in Resources */,
 				EF926CCC1E52384600782103 /* Main.storyboard in Resources */,
 			);
