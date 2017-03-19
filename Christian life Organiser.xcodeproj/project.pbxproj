@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0BB327E1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0BB327D1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg */; };
+		D0BB32801E7D7A7F00C34D7D /* PrayerAddView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */; };
+		D0BB32821E7EF28200C34D7D /* prayerAdd2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */; };
+		D0BB32841E7F10B000C34D7D /* prayerAdd3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */; };
 		D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */; };
 		D0F400DE1E6C7D4300769304 /* Christianity-Cross-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F400DD1E6C7D4200769304 /* Christianity-Cross-2.jpg */; };
 		EF926CC51E52384600782103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC41E52384600782103 /* AppDelegate.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0BB327D1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "add-plus-button_318-76864.jpg"; path = "../../add-plus-button_318-76864.jpg"; sourceTree = "<group>"; };
+		D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerAddView1.swift; sourceTree = "<group>"; };
+		D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prayerAdd2.swift; sourceTree = "<group>"; };
+		D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prayerAdd3.swift; sourceTree = "<group>"; };
 		D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Welcome-Home-Autumn-qcm.jpg"; path = "../../Welcome-Home-Autumn-qcm.jpg"; sourceTree = "<group>"; };
 		D0F400DD1E6C7D4200769304 /* Christianity-Cross-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Christianity-Cross-2.jpg"; path = "../../Christianity-Cross-2.jpg"; sourceTree = "<group>"; };
 		EF926CC11E52384600782103 /* Christian life Organiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian life Organiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +117,11 @@
 				EF926CC61E52384600782103 /* FirstViewController.swift */,
 				EF926CC81E52384600782103 /* SecondViewController.swift */,
 				EF926CF61E52397700782103 /* ThirdView.swift */,
+				D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */,
+				D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */,
+				D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */,
 				EF926CCA1E52384600782103 /* Main.storyboard */,
+				D0BB327D1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg */,
 				D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */,
 				EF926CCD1E52384600782103 /* Assets.xcassets */,
 				EF926CCF1E52384600782103 /* LaunchScreen.storyboard */,
@@ -245,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BB327E1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg in Resources */,
 				EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */,
 				D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */,
 				EF926CCE1E52384600782103 /* Assets.xcassets in Resources */,
@@ -276,6 +289,9 @@
 			files = (
 				EF926CC91E52384600782103 /* SecondViewController.swift in Sources */,
 				EF926CF71E52397700782103 /* ThirdView.swift in Sources */,
+				D0BB32801E7D7A7F00C34D7D /* PrayerAddView1.swift in Sources */,
+				D0BB32821E7EF28200C34D7D /* prayerAdd2.swift in Sources */,
+				D0BB32841E7F10B000C34D7D /* prayerAdd3.swift in Sources */,
 				EF926CC51E52384600782103 /* AppDelegate.swift in Sources */,
 				EF926CC71E52384600782103 /* FirstViewController.swift in Sources */,
 			);

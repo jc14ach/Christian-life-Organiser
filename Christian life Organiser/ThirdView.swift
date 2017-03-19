@@ -35,7 +35,7 @@ class ThirdView: UIViewController {
     @IBAction func bibleReminder(_ sender: UIButton) {
     
         // 1
-        let notification = UILocalNotification()
+        /*let notification = UILocalNotification()
         // 2
         notification.fireDate = datePickerBile.date
         // 3
@@ -52,7 +52,7 @@ class ThirdView: UIViewController {
        
        func updateUI(){
         let currentSettings = UIApplication.shared.scheduleLocalNotification(notification)
-        }
+        }*/
 
         
     }
