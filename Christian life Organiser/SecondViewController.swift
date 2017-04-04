@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 var list1 = [""]
 var list2 = [""]
 var list3 = [""]
@@ -14,11 +15,30 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
   
    
     
+    @IBAction func reminder(_ sender: UISwitch) {
+        
+        if(sender.isOn == true){
+            
+            
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Prayer Reminder"
+            content.body = "Reminder to pray today"
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 86400, repeats: true)
+            let request = UNNotificationRequest(identifier: "timer done", content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
+            
+        }
+        
+    }
+    
     
     @IBOutlet weak var prayer1TV: UITableView!
     @IBOutlet weak var prayer2TV: UITableView!
     @IBOutlet weak var prayer3TV: UITableView!
-    
+    //var timer = Timer()
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,6 +53,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.prayer2TV.dataSource = self
         self.prayer3TV.delegate = self
         self.prayer3TV.dataSource = self
+        
+        //timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: Selector("notification"), userInfo: nil, repeats: true)
+        
+       
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge], completionHandler: {didAllow, error in})
+       
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -105,8 +131,29 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
+    // reminder code
+    /**
+    var time = 30
    
+    func notification(){
+        
+        time -= 1
+        if(time == 0){
+        let notification = UILocalNotification()
+        
+        notification.alertAction = "Back to app"
+        notification.fireDate = Date(timeIntervalSinceNow: 0)
+        
+        UIApplication.shared.scheduleLocalNotification(notification)
+            
+            timer.invalidate()
+    }
+    }
+    */
+    
+    
+    
+    
     
     
 }

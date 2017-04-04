@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import UserNotifications
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     
@@ -19,15 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
-        let types:UIUserNotificationType = UIUserNotificationType.alert
+        /**let types:UIUserNotificationType = UIUserNotificationType.alert
         let mySettings: UIUserNotificationSettings = UIUserNotificationSettings(types: types, categories: nil)
         UIApplication.shared.registerUserNotificationSettings(mySettings)
         
-        
+        */
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (allowed, error) in }
+        UNUserNotificationCenter.current().delegate = self
         return true
         
       
-            
+ 
             
         }
 
