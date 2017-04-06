@@ -11,6 +11,16 @@
 		D0BB32801E7D7A7F00C34D7D /* PrayerAddView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */; };
 		D0BB32821E7EF28200C34D7D /* prayerAdd2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */; };
 		D0BB32841E7F10B000C34D7D /* prayerAdd3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */; };
+		D0E347021E9487AC00A96A87 /* Silver-street-bible-icon-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0E347011E9487AC00A96A87 /* Silver-street-bible-icon-01.jpg */; };
+		D0E347041E95070200A96A87 /* bibleReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E347031E95070200A96A87 /* bibleReadingList.swift */; };
+		D0E347081E9511C000A96A87 /* james1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E347071E9511C000A96A87 /* james1.swift */; };
+		D0E3470E1E95367400A96A87 /* james2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3470D1E95367400A96A87 /* james2.swift */; };
+		D0E347101E957CB600A96A87 /* favChurches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3470F1E957CB600A96A87 /* favChurches.swift */; };
+		D0E347121E95B1D200A96A87 /* homeChurch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E347111E95B1D200A96A87 /* homeChurch.swift */; };
+		D0E347141E95B99500A96A87 /* forestTown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E347131E95B99500A96A87 /* forestTown.swift */; };
+		D0E347161E95BC4000A96A87 /* christChurch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E347151E95BC4000A96A87 /* christChurch.swift */; };
+		D0E347181E95C11A00A96A87 /* 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E347171E95C11A00A96A87 /* 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png */; };
+		D0E3471A1E95C3C300A96A87 /* cumcwhitelogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D0E347191E95C3C300A96A87 /* cumcwhitelogo.gif */; };
 		D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */; };
 		D0F400DE1E6C7D4300769304 /* Christianity-Cross-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F400DD1E6C7D4200769304 /* Christianity-Cross-2.jpg */; };
 		EF926CC51E52384600782103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF926CC41E52384600782103 /* AppDelegate.swift */; };
@@ -46,6 +56,16 @@
 		D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerAddView1.swift; sourceTree = "<group>"; };
 		D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prayerAdd2.swift; sourceTree = "<group>"; };
 		D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prayerAdd3.swift; sourceTree = "<group>"; };
+		D0E347011E9487AC00A96A87 /* Silver-street-bible-icon-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Silver-street-bible-icon-01.jpg"; sourceTree = SOURCE_ROOT; };
+		D0E347031E95070200A96A87 /* bibleReadingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bibleReadingList.swift; sourceTree = "<group>"; };
+		D0E347071E9511C000A96A87 /* james1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = james1.swift; sourceTree = "<group>"; };
+		D0E3470D1E95367400A96A87 /* james2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = james2.swift; sourceTree = "<group>"; };
+		D0E3470F1E957CB600A96A87 /* favChurches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favChurches.swift; sourceTree = "<group>"; };
+		D0E347111E95B1D200A96A87 /* homeChurch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeChurch.swift; sourceTree = "<group>"; };
+		D0E347131E95B99500A96A87 /* forestTown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = forestTown.swift; sourceTree = "<group>"; };
+		D0E347151E95BC4000A96A87 /* christChurch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = christChurch.swift; sourceTree = "<group>"; };
+		D0E347171E95C11A00A96A87 /* 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png; sourceTree = SOURCE_ROOT; };
+		D0E347191E95C3C300A96A87 /* cumcwhitelogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cumcwhitelogo.gif; sourceTree = SOURCE_ROOT; };
 		D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Welcome-Home-Autumn-qcm.jpg"; path = "../../Welcome-Home-Autumn-qcm.jpg"; sourceTree = "<group>"; };
 		D0F400DD1E6C7D4200769304 /* Christianity-Cross-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Christianity-Cross-2.jpg"; path = "../../Christianity-Cross-2.jpg"; sourceTree = "<group>"; };
 		EF926CC11E52384600782103 /* Christian life Organiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian life Organiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +133,7 @@
 		EF926CC31E52384600782103 /* Christian life Organiser */ = {
 			isa = PBXGroup;
 			children = (
+				D0E347011E9487AC00A96A87 /* Silver-street-bible-icon-01.jpg */,
 				EF926CC41E52384600782103 /* AppDelegate.swift */,
 				EF926CC61E52384600782103 /* FirstViewController.swift */,
 				EF926CC81E52384600782103 /* SecondViewController.swift */,
@@ -120,7 +141,16 @@
 				D0BB327F1E7D7A7F00C34D7D /* PrayerAddView1.swift */,
 				D0BB32811E7EF28200C34D7D /* prayerAdd2.swift */,
 				D0BB32831E7F10B000C34D7D /* prayerAdd3.swift */,
+				D0E347031E95070200A96A87 /* bibleReadingList.swift */,
+				D0E347071E9511C000A96A87 /* james1.swift */,
+				D0E3470D1E95367400A96A87 /* james2.swift */,
+				D0E3470F1E957CB600A96A87 /* favChurches.swift */,
+				D0E347111E95B1D200A96A87 /* homeChurch.swift */,
+				D0E347131E95B99500A96A87 /* forestTown.swift */,
+				D0E347151E95BC4000A96A87 /* christChurch.swift */,
 				EF926CCA1E52384600782103 /* Main.storyboard */,
+				D0E347191E95C3C300A96A87 /* cumcwhitelogo.gif */,
+				D0E347171E95C11A00A96A87 /* 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png */,
 				D0BB327D1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg */,
 				D0F400DB1E6900E800769304 /* Welcome-Home-Autumn-qcm.jpg */,
 				EF926CCD1E52384600782103 /* Assets.xcassets */,
@@ -257,7 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E3471A1E95C3C300A96A87 /* cumcwhitelogo.gif in Resources */,
 				D0BB327E1E7C9DA100C34D7D /* add-plus-button_318-76864.jpg in Resources */,
+				D0E347021E9487AC00A96A87 /* Silver-street-bible-icon-01.jpg in Resources */,
+				D0E347181E95C11A00A96A87 /* 6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png in Resources */,
 				EF926CD11E52384600782103 /* LaunchScreen.storyboard in Resources */,
 				D0F400DC1E6900E900769304 /* Welcome-Home-Autumn-qcm.jpg in Resources */,
 				EF926CCE1E52384600782103 /* Assets.xcassets in Resources */,
@@ -288,12 +321,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF926CC91E52384600782103 /* SecondViewController.swift in Sources */,
+				D0E347161E95BC4000A96A87 /* christChurch.swift in Sources */,
+				D0E347141E95B99500A96A87 /* forestTown.swift in Sources */,
 				EF926CF71E52397700782103 /* ThirdView.swift in Sources */,
+				D0E347101E957CB600A96A87 /* favChurches.swift in Sources */,
 				D0BB32801E7D7A7F00C34D7D /* PrayerAddView1.swift in Sources */,
 				D0BB32821E7EF28200C34D7D /* prayerAdd2.swift in Sources */,
+				D0E347121E95B1D200A96A87 /* homeChurch.swift in Sources */,
 				D0BB32841E7F10B000C34D7D /* prayerAdd3.swift in Sources */,
+				D0E347041E95070200A96A87 /* bibleReadingList.swift in Sources */,
 				EF926CC51E52384600782103 /* AppDelegate.swift in Sources */,
+				D0E3470E1E95367400A96A87 /* james2.swift in Sources */,
 				EF926CC71E52384600782103 /* FirstViewController.swift in Sources */,
+				D0E347081E9511C000A96A87 /* james1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

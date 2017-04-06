@@ -17,7 +17,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
     
     
     let Hatfield: [String] = ["Home Church", "Forest Town Church", "Christ Church"]
-    let identities : [String] = ["A","B","C"]
+    let identities : [String] = ["A","B","C","D"]
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

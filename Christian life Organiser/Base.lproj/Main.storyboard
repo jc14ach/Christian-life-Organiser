@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="28" width="260" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kZ3-Yt-pIr" id="rQb-V1-Lhi">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -44,6 +44,17 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="yCl-Gs-dkK"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLh-cn-kJy">
+                                <rect key="frame" x="30" y="580" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Favourite church list">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="boR-6Y-Yk6" kind="show" id="z0o-Jr-WcC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -63,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1743.2" y="-328.78560719640183"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Church-->
         <scene sceneID="F3a-Np-Xo1">
             <objects>
-                <viewController storyboardIdentifier="A" id="vh8-oY-JJQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A" id="vh8-oY-JJQ" customClass="homeChurch" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="82M-V4-RhW"/>
                         <viewControllerLayoutGuide type="bottom" id="lix-Re-Wq4"/>
@@ -128,6 +139,21 @@
                                 <rect key="frame" x="39" y="328" width="249" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrY-Ij-mAm">
+                                <rect key="frame" x="270" y="616" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="homeSwitch:" destination="vh8-oY-JJQ" eventType="valueChanged" id="ba5-Ys-3JG"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add church to favourite list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-HD-MCF">
+                                <rect key="frame" x="39" y="621" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -154,10 +180,60 @@
             </objects>
             <point key="canvasLocation" x="3143" y="-331"/>
         </scene>
-        <!--View Controller-->
+        <!--Fav Churches-->
+        <scene sceneID="z8m-sb-2eT">
+            <objects>
+                <viewController storyboardIdentifier="D" id="boR-6Y-Yk6" customClass="favChurches" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sn5-QN-Tbc"/>
+                        <viewControllerLayoutGuide type="bottom" id="NlS-cx-YaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4AO-QN-9uu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gBa-vg-Z4G">
+                                <rect key="frame" x="16" y="72" width="343" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gKO-Ht-0FW">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gKO-Ht-0FW" id="Qa9-Nn-NBp">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="boR-6Y-Yk6" id="oR0-7b-2a8"/>
+                                    <outlet property="delegate" destination="boR-6Y-Yk6" id="Rbp-cz-S59"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favourite churches " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFv-FN-W14">
+                                <rect key="frame" x="16" y="106" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="favChurchesTV" destination="gBa-vg-Z4G" id="vmf-Pz-1Bu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBN-Jt-WnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3141.5999999999999" y="-994.45277361319347"/>
+        </scene>
+        <!--Christ Church-->
         <scene sceneID="fmS-0Y-BVb">
             <objects>
-                <viewController storyboardIdentifier="C" id="k7R-Yq-maH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="C" id="k7R-Yq-maH" customClass="christChurch" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sYC-fI-K8j"/>
                         <viewControllerLayoutGuide type="bottom" id="Fh7-M5-Ikk"/>
@@ -173,18 +249,80 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add church to favourite list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-Pl-WVH">
+                                <rect key="frame" x="19" y="621" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-42-Pc1">
+                                <rect key="frame" x="245" y="616" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="christSwitch:" destination="k7R-Yq-maH" eventType="valueChanged" id="BoG-Gc-hqI"/>
+                                    <action selector="homeSwitch:" destination="vh8-oY-JJQ" eventType="valueChanged" id="vrb-Nt-rcd"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Main meeting: 10:00 Sundays" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-rZ-xlV">
+                                <rect key="frame" x="43" y="124" width="289" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="location: 25 St. Albans Road East Hatfield Herts AL10 0EJ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n5S-kH-N2L">
+                                <rect key="frame" x="43" y="148" width="316" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Demonination: United Reformed Church" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsg-sC-rcY">
+                                <rect key="frame" x="43" y="187" width="303" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Avarage Congragation: 100" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rwP-z5-byR">
+                                <rect key="frame" x="43" y="210" width="262" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Leader: Unkown" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-tF-CZk">
+                                <rect key="frame" x="43" y="235" width="249" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Contact Details:                         Phone: 01707256250               Website: hatfieldurc.org.uk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VeN-i8-028">
+                                <rect key="frame" x="43" y="262" width="236" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cumcwhitelogo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="pQ6-dV-dEE">
+                                <rect key="frame" x="57" y="353" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGe-a3-3hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="-994"/>
+            <point key="canvasLocation" x="1741.5999999999999" y="-994.45277361319347"/>
         </scene>
-        <!--View Controller-->
+        <!--Forest Town-->
         <scene sceneID="uDZ-u4-7y4">
             <objects>
-                <viewController storyboardIdentifier="B" id="W8j-3U-6Pu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="W8j-3U-6Pu" customClass="forestTown" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQD-hV-GIA"/>
                         <viewControllerLayoutGuide type="bottom" id="JVb-rs-MWG"/>
@@ -200,13 +338,75 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add church to favourite list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-jc-WMc">
+                                <rect key="frame" x="29" y="610" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zri-En-NfA">
+                                <rect key="frame" x="255" y="605" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="forestSwitch:" destination="W8j-3U-6Pu" eventType="valueChanged" id="hs0-TI-D3g"/>
+                                    <action selector="homeSwitch:" destination="vh8-oY-JJQ" eventType="valueChanged" id="FZf-hu-vSW"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Main meeting: 10:00 and 6:00 Sundays" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Vo-8V-JBZ">
+                                <rect key="frame" x="43" y="128" width="289" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="location: Lyon way, St Albans AL4 0LB" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-WJ-RcD">
+                                <rect key="frame" x="43" y="152" width="289" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Demonination: Independant" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nfj-8w-kaw">
+                                <rect key="frame" x="43" y="176" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Avarage Congragation: 160" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-aY-yYL">
+                                <rect key="frame" x="42" y="199" width="262" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Leader: Ant Rist" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jz6-63-GtK">
+                                <rect key="frame" x="42" y="224" width="249" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Contact Details:                         Phone: 01727852070               Website: www.foresttownchurch.org" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qcr-Hh-P4c">
+                                <rect key="frame" x="43" y="249" width="236" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png" translatesAutoresizingMaskIntoConstraints="NO" id="zXi-G8-gZ8">
+                                <rect key="frame" x="43" y="351" width="240" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZr-K7-hbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2434" y="-994"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="-994.45277361319347"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -511,6 +711,64 @@
             </objects>
             <point key="canvasLocation" x="1440.8" y="358.4707646176912"/>
         </scene>
+        <!--Bible Reading List-->
+        <scene sceneID="UaT-kM-fNR">
+            <objects>
+                <viewController id="Fth-sb-gZW" customClass="bibleReadingList" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tnK-1w-XmY"/>
+                        <viewControllerLayoutGuide type="bottom" id="6L7-ZU-SMT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42t-sU-der">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reading progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zir-9D-FnN">
+                                <rect key="frame" x="43" y="28" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F9r-sD-orY">
+                                <rect key="frame" x="43" y="57" width="240" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="readingList" id="weg-r3-BfL">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="weg-r3-BfL" id="tUQ-NO-Iyv">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fth-sb-gZW" id="Fpg-g4-ARy"/>
+                                    <outlet property="delegate" destination="Fth-sb-gZW" id="BNz-kr-ZDN"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="James chapters " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdD-cM-mJb">
+                                <rect key="frame" x="43" y="500" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bibleTV" destination="F9r-sD-orY" id="8c9-Xu-zSz"/>
+                        <outlet property="jamesCount" destination="CdD-cM-mJb" id="5Ga-SQ-rmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHV-3l-mRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754.39999999999998" y="1515.2923538230887"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="TCC-MM-H6L">
             <objects>
@@ -556,6 +814,9 @@
                                 <rect key="frame" x="16" y="161" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Chapter 2"/>
+                                <connections>
+                                    <segue destination="1li-5U-VsI" kind="show" id="WWO-xy-DDL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwu-UO-cwB">
                                 <rect key="frame" x="0.0" y="3" width="212" height="83"/>
@@ -574,10 +835,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="1516.1919040479761"/>
         </scene>
-        <!--View Controller-->
+        <!--James2-->
         <scene sceneID="tIc-q0-x4Z">
             <objects>
-                <viewController id="1li-5U-VsI" sceneMemberID="viewController">
+                <viewController id="1li-5U-VsI" customClass="james2" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Kb-2i-Nai"/>
                         <viewControllerLayoutGuide type="bottom" id="4VW-D2-LKb"/>
@@ -601,18 +862,65 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ruM-w9-3Lc">
+                                <rect key="frame" x="36" y="68" width="302" height="513"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <string key="text">Favoritism Forbidden
+2 My brothers and sisters, believers in our glorious Lord Jesus Christ must not show favoritism. 2 Suppose a man comes into your meeting wearing a gold ring and fine clothes, and a poor man in filthy old clothes also comes in. 3 If you show special attention to the man wearing fine clothes and say, “Here’s a good seat for you,” but say to the poor man, “You stand there” or “Sit on the floor by my feet,” 4 have you not discriminated among yourselves and become judges with evil thoughts?
+
+5 Listen, my dear brothers and sisters: Has not God chosen those who are poor in the eyes of the world to be rich in faith and to inherit the kingdom he promised those who love him? 6 But you have dishonored the poor. Is it not the rich who are exploiting you? Are they not the ones who are dragging you into court? 7 Are they not the ones who are blaspheming the noble name of him to whom you belong?
+
+8 If you really keep the royal law found in Scripture, “Love your neighbor as yourself,”[a] you are doing right. 9 But if you show favoritism, you sin and are convicted by the law as lawbreakers. 10 For whoever keeps the whole law and yet stumbles at just one point is guilty of breaking all of it. 11 For he who said, “You shall not commit adultery,”[b] also said, “You shall not murder.”[c] If you do not commit adultery but do commit murder, you have become a lawbreaker.
+
+12 Speak and act as those who are going to be judged by the law that gives freedom, 13 because judgment without mercy will be shown to anyone who has not been merciful. Mercy triumphs over judgment.
+
+Faith and Deeds
+14 What good is it, my brothers and sisters, if someone claims to have faith but has no deeds? Can such faith save them? 15 Suppose a brother or a sister is without clothes and daily food. 16 If one of you says to them, “Go in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? 17 In the same way, faith by itself, if it is not accompanied by action, is dead.
+
+18 But someone will say, “You have faith; I have deeds.”
+
+Show me your faith without deeds, and I will show you my faith by my deeds. 19 You believe that there is one God. Good! Even the demons believe that—and shudder.
+
+20 You foolish person, do you want evidence that faith without deeds is useless[d]? 21 Was not our father Abraham considered righteous for what he did when he offered his son Isaac on the altar? 22 You see that his faith and his actions were working together, and his faith was made complete by what he did. 23 And the scripture was fulfilled that says, “Abraham believed God, and it was credited to him as righteousness,”[e] and he was called God’s friend. 24 You see that a person is considered righteous by what they do and not by faith alone.
+
+25 In the same way, was not even Rahab the prostitute considered righteous for what she did when she gave lodging to the spies and sent them off in a different direction? 26 As the body without the spirit is dead, so faith without deeds is dead.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mark as read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT2-fv-u0P">
+                                <rect key="frame" x="36" y="610" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdb-xv-okQ">
+                                <rect key="frame" x="155" y="605" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="james2Switch:" destination="1li-5U-VsI" eventType="valueChanged" id="Y3J-pU-BSI"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtL-uj-St5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="2294"/>
+            <point key="canvasLocation" x="36" y="2293.4032983508246"/>
         </scene>
-        <!--View Controller-->
+        <!--James1-->
         <scene sceneID="vB2-fZ-eOt">
             <objects>
-                <viewController id="8Oy-IV-FEB" sceneMemberID="viewController">
+                <viewController id="8Oy-IV-FEB" customClass="james1" customModule="Christian_life_Organiser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qhq-JT-LhN"/>
                         <viewControllerLayoutGuide type="bottom" id="1QG-7Y-873"/>
@@ -648,6 +956,10 @@
                                 <rect key="frame" x="36" y="54" width="302" height="547"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <string key="text">1 James, a servant of God and of the Lord Jesus Christ,
 
 To the twelve tribes scattered among the nations:
@@ -674,6 +986,21 @@ Listening and Doing
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mark as read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8im-1U-arb">
+                                <rect key="frame" x="36" y="626" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swE-xg-v3V">
+                                <rect key="frame" x="146" y="621" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="james1Switch:" destination="8Oy-IV-FEB" eventType="valueChanged" id="jAj-i3-a1d"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -714,18 +1041,44 @@ Listening and Doing
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejr-Ux-Dk3">
-                                <rect key="frame" x="136" y="128" width="103" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejr-Ux-Dk3">
+                                <rect key="frame" x="53" y="44" width="269" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Read the bible "/>
+                                <state key="normal" title="Read the bible " backgroundImage="Silver-street-bible-icon-01.jpg"/>
                                 <connections>
                                     <segue destination="bZM-lL-VSa" kind="modal" id="Qfm-JX-9Kd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDN-sn-v6N">
+                                <rect key="frame" x="112" y="279" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Your reading progress">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fth-sb-gZW" kind="show" id="uNX-c4-HBw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-0b-kjw">
+                                <rect key="frame" x="41" y="366" width="292" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" image="second" id="eGO-B9-KEt"/>
+                    <connections>
+                        <outlet property="dailyVerse" destination="ci2-0b-kjw" id="Av1-wK-I2e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmz-ZO-VMa" sceneMemberID="firstResponder"/>
             </objects>
@@ -752,14 +1105,18 @@ Listening and Doing
         </scene>
     </scenes>
     <resources>
+        <image name="6867eb_f722a751521b461692f44d87f8fd01f3.png_srz_336_298_85_22_0.50_1.20_0.00_png_srz.png" width="336" height="298"/>
+        <image name="Silver-street-bible-icon-01.jpg" width="240" height="240"/>
         <image name="Welcome-Home-Autumn-qcm.jpg" width="1920" height="1080"/>
         <image name="add-plus-button_318-76864.jpg" width="338" height="338"/>
+        <image name="cumcwhitelogo.gif" width="2598" height="1432"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a1Y-hi-v1a"/>
+        <segue reference="WWO-xy-DDL"/>
         <segue reference="Qfm-JX-9Kd"/>
-        <segue reference="7vr-1Q-Eag"/>
+        <segue reference="a1Y-hi-v1a"/>
+        <segue reference="lEC-kF-c5S"/>
     </inferredMetricsTieBreakers>
 </document>

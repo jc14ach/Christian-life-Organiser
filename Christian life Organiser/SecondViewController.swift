@@ -14,7 +14,7 @@ var list3 = [""]
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
    
-    
+    // set the notification
     @IBAction func reminder(_ sender: UISwitch) {
         
         if(sender.isOn == true){
