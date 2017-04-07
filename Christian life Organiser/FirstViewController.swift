@@ -15,10 +15,10 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
     
     
     
+    @IBOutlet weak var locationName: UILabel!
     
-    let Hatfield: [String] = ["Home Church", "Forest Town Church", "Christ Church"]
-    let identities : [String] = ["A","B","C","D"]
-   
+    var Hatfield: [String] = ["Home Church", "Forest Town Church", "Christ Church","","",""]
+    var identities : [String] = ["A","B","C","D","E","F","G"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -87,6 +87,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated: true)
         self.TableView.isHidden = true
+        locationName.isHidden = true
        
        
     }
@@ -126,11 +127,24 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
             self.mapView.centerCoordinate = self.pointAnnotation.coordinate
             self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
             
+            let allAnnotations = self.mapView.annotations
             
             // text view options
             if searchBar.text ==  "Hatfield" {
                 // sets view table and map for hatfield results
+                self.locationName.isHidden = false
+                self.locationName.text = "Hatfield"
+                self.identities.removeAll()
+                self.identities.append("A")
+                self.identities.append("B")
+                self.identities.append("C")
+                self.Hatfield.removeAll()
+                self.Hatfield.append("Home Church")
+                self.Hatfield.append("Forest Town Church")
+                self.Hatfield.append("Christ Church")
+                self.TableView.reloadData()
                 self.TableView.isHidden = false
+                self.mapView.removeAnnotations(allAnnotations)
                 
                 let homeCoordinates = CLLocationCoordinate2DMake(51.753312, -0.24082080)
                 let homeAnnotation = MKPointAnnotation()
@@ -152,9 +166,52 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDel
                 }
             
             
-                        
+                if searchBar.text == "Watford" {
+                    self.locationName.isHidden = false
+                    self.locationName.text = "Watford"
+                    self.identities.removeAll()
+                    self.identities.append("D")
+                    self.identities.append("E")
+                    self.identities.append("F")
+                    self.Hatfield.removeAll()
+                    self.Hatfield.append("Soul Survivour")
+                    self.Hatfield.append("Wellspring Church")
+                    self.Hatfield.append("Christ First Watford")
+                    self.TableView.reloadData()
+                    self.TableView.isHidden = false
+                    self.mapView.removeAnnotations(allAnnotations)
+                    
+                    let homeCoordinates = CLLocationCoordinate2DMake(51.676733, -0.388378)
+                    let homeAnnotation = MKPointAnnotation()
+                    homeAnnotation.title = "Soul Survivour"
+                    homeAnnotation.coordinate = homeCoordinates
+                    self.mapView.addAnnotation(homeAnnotation)
+                    
+                    let forestCordinates = CLLocationCoordinate2DMake(51.651745, -0.391425)
+                    let forestAnnotation = MKPointAnnotation()
+                    forestAnnotation.title = "Wellspring Church"
+                    forestAnnotation.coordinate = forestCordinates
+                    self.mapView.addAnnotation(forestAnnotation)
+                    
+                    let christCoordinates = CLLocationCoordinate2DMake(51.660939, -0.410428)
+                    let christAnnotation = MKPointAnnotation()
+                    christAnnotation.title = "Christ First Watford"
+                    christAnnotation.coordinate = christCoordinates
+                    self.mapView.addAnnotation(christAnnotation)
                 
+                }
+                else{
+                   /** self.locationName.isHidden = true
+                    self.mapView.removeAnnotations(allAnnotations)
+                    self.Hatfield.removeAll()
+
+                    self.TableView.reloadData()*/
             }
+    
+                        
+            
+            }
+       
         }
     }
     

@@ -23,7 +23,7 @@ class james2: UIViewController {
             //let i = bibleList.index(of: "James 1")
             bibleList.remove(at: bibleList.index(of: "James 2")!)
             //james[0] = ""
-            
+        
         }
         
     }

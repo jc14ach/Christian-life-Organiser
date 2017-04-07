@@ -9,10 +9,15 @@
 import UIKit
 var bibleList = [""]
 
+
 class bibleReadingList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        bibleList = Array(Set(bibleList))
+    }
     
     @IBOutlet weak var jamesCount: UILabel!
     @IBOutlet weak var bibleTV: UITableView!
@@ -32,10 +37,29 @@ class bibleReadingList: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        bibleList = Array(Set(bibleList))
         bibleTV.reloadData()
+        var count = bibleList.count
+        jamesCount.text = ("James chapters" + String(count-1) + "/5")
+
     }
     func countProgress(){
-    var count = 0
+    var count = bibleList.count
     jamesCount.text = ("James chapters" + String(count) + "/5")
     }
+
+
+    // delete button
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            bibleList.remove(at: indexPath.row)
+            bibleTV.reloadData()
+            
+            
+        }
+    }
+
 }
+

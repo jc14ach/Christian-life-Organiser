@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/FirstViewController.swift"
-            timestampString = "510196226.74251"
+            timestampString = "513205460.562658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "searchBarSearchButtonClicked(_:)"
             landmarkType = "7">
             <Locations>
@@ -199,7 +199,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/FirstViewController.swift"
-            timestampString = "510183784.855641"
+            timestampString = "513205145.355997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -310,7 +310,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/SecondViewController.swift"
-            timestampString = "513041161.033194"
+            timestampString = "513188675.799408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -390,11 +390,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/bibleReadingList.swift"
-            timestampString = "513095654.849941"
+            timestampString = "513185398.021261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "bibleReadingList"
             landmarkType = "3">
          </BreakpointContent>
@@ -406,11 +406,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/james1.swift"
-            timestampString = "513110627.818271"
+            timestampString = "513185785.090874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "james1Switch(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -422,11 +422,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Christian life Organiser/james1.swift"
-            timestampString = "513110627.818271"
+            timestampString = "513185785.090874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "james1Switch(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christian life Organiser/james1.swift"
+            timestampString = "513185785.090874"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "james1Switch(_:)"
             landmarkType = "7">
          </BreakpointContent>

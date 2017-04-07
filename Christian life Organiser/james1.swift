@@ -12,10 +12,11 @@ import UIKit
 class james1: UIViewController {
     
     
-    var james = ["James 1"]
-    @IBAction func test(_ sender: Any) {
-        bibleList.append("james")
-    }
+    var james = ["",""]
+    
+    //@IBAction func test(_ sender: Any) {
+        //bibleList.append("james")
+   // }
     
     
     @IBAction func james1Switch(_ sender: UISwitch) {
@@ -29,7 +30,11 @@ class james1: UIViewController {
             
             }
         else{
-            
+            if(james[0] == ""){
+                
+            }
+            else{
+                bibleList = Array(Set(bibleList))
             //let i = bibleList.index(of: "James 1")
             bibleList.remove(at: bibleList.index(of: "James 1")!)
             //james[0] = ""
@@ -37,12 +42,12 @@ class james1: UIViewController {
             }
             
         }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        james[0] = "James 1"
-        bibleList.append(james[0])
-    }
+    //override func viewDidLoad() {
+        //super.viewDidLoad()
+        //james[0] = ""
+        //bibleList.append(james[0])
+   // }
 
 }
     
-
+}

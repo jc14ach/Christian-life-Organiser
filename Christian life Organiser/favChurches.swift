@@ -10,6 +10,15 @@ import UIKit
 var favChurchList = [""]
 
 class favChurches: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        favChurchList = Array(Set(favChurchList))
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        favChurchesTV.reloadData()
+        favChurchList = Array(Set(favChurchList))
+    }
 
 
     @IBOutlet weak var favChurchesTV: UITableView!
@@ -26,9 +35,16 @@ class favChurches: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return(favCell)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        favChurchesTV.reloadData()
+  
+    // delete button
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            favChurchList.remove(at: indexPath.row)
+            favChurchesTV.reloadData()
+            
+            
+        }
     }
-
-
 }
